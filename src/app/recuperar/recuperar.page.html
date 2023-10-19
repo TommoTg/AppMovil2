@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Recuperar Contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form [formGroup]="formularioRecuperacion" (ngSubmit)="recuperarContrasena()">
+    <ion-item class="registration-input" [class.error]="formularioRecuperacion.get('nombre')?.invalid && formularioRecuperacion.get('nombre')?.touched">
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <div *ngIf="formularioRecuperacion.get('nombre')?.invalid && formularioRecuperacion.get('nombre')?.touched" class="error-message">
+      <ion-label *ngIf="formularioRecuperacion.get('nombre')?.hasError('required')">Este campo es requerido.</ion-label>
+    </div>
+    <ion-button type="submit" class="registration-button" expand="full">
+      Recuperar Contraseña
+    </ion-button>
+  </form>
+</ion-content>

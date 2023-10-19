@@ -1,0 +1,8 @@
+{
+  "name": "AppLista",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
+

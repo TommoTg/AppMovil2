@@ -1,0 +1,43 @@
+
+  .registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .registration-card {
+    width: 80%;
+    max-width: 400px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-header {
+    text-align: center;
+  }
+  
+  .registration-form {
+    padding: 16px;
+  }
+  
+  .registration-input {
+    margin-bottom: 16px;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+  }
+  
+  .registration-button {
+    background-color: #007bff;
+
+    margin-top: 16px;
+  }
+  
+
+
+
+  

@@ -1,0 +1,35 @@
+.scanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+
+
+
+  .scanner-container {
+    padding: 20px;
+    border-radius: 10px; /* Agrega esquinas redondeadas al contenedor */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra al contenedor */
+  }
+  
+  /* Estilo para el código QR */
+  .results {
+
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px; /* Agrega esquinas redondeadas al resultado */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Agrega sombra al resultado */
+  }
+  
+  /* Estilo para el resultado del código QR */
+  .results small {
+    font-size: 14px;
+  }
+  
+  /* Estilo para el texto del resultado del código QR */
+  .results strong {
+    font-size: 18px;
+  }

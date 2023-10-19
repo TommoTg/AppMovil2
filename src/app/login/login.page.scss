@@ -1,0 +1,40 @@
+.login-page {
+    background-color: #f4f4f4; /* Cambia el color de fondo de la página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Estilo para el contenedor del formulario */
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Estilo para el botón de ingresar */
+  .login-button {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el título del formulario */
+  .login-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Estilo para los elementos de formulario */
+  .login-input {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para la etiqueta del campo de entrada */
+  .input-label {
+    font-size: 16px;
+  }
+  
+  /* Estilo para el campo de entrada */
+  .input-field {
+    font-size: 16px;
+  }
