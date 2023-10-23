@@ -19,6 +19,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule }  from '@angular/fire/compat';
 import { HttpClientModule } from '@angular/common/http'
 
+import { AlertController } from '@ionic/angular';
+
+import { AuthGuard } from './services/auth.guard';
 
 
 @NgModule({
@@ -32,9 +35,10 @@ import { HttpClientModule } from '@angular/common/http'
       FormsModule,
       AngularFireModule.initializeApp(environment.firebaseConfig),
       AngularFireAuthModule,
-      HttpClientModule
+      HttpClientModule,
+      
     ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [AuthGuard, AlertController,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

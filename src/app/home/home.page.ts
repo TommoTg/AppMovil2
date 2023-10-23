@@ -30,7 +30,7 @@ export class HomePage implements AfterViewInit {
 
   currentDevice: MediaDeviceInfo | undefined = {
     kind: 'videoinput',
-    label: 'Iriun Webcam', // Cambia esto al nombre correcto de la cámara virtual
+    label: 'Iriun Webcam', 
     deviceId: 'virtual-camera-id',
     groupId: 'virtual-group-id',
     toJSON: () => ({
@@ -101,21 +101,21 @@ export class HomePage implements AfterViewInit {
 
       const horaActual = this.datePipe.transform(new Date(), 'HH:mm') || '';
 
-      // Ahora tienes un objeto JSON válido en qrDataObject
+      //objeto JSON valido en qrDataObject
       console.log('Objeto JSON generado:', qrDataObject);
       qrDataObject['Hora Actual'] = horaActual;
 
 
-      // Puedes acceder a los valores individuales
+      //valores individuales
       const nombreProfesor = qrDataObject['Nombre Profesor'];
       const hora = qrDataObject['Hora'];
       const sala = qrDataObject['sala'];
       const dia = qrDataObject['Dia'];
       
 
-      // Realiza las acciones necesarias con estos datos
+      
 
-      // Finalmente, navega a la página "lista" y pasa los datos si es necesario
+      // navega a la página "lista" y pasa los datos
       this.router.navigate(['/lista'], {
         state: {
           qrData: qrDataObject,
